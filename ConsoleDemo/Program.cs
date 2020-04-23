@@ -1,24 +1,16 @@
-﻿using Database;
-using System;
+﻿using ConsoleDemo.Enumerable;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleDemo
 {
-    class Program
+    partial class Program
     {
-        static void Main(string[] args)
+        static void CombineTests()
         {
-            testDB();
+
         }
 
-        static void testDB()
-        {
-            using (var db = new NorthwindContext())
-            {
-                foreach (var prod in db.Products)
-                {
-                    Console.WriteLine(" - {0}", prod.ProductName);
-                }
-            }
-        }
+
     }
 }

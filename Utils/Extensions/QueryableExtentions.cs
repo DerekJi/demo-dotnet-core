@@ -17,7 +17,7 @@ namespace Utils.Extensions
         /// <param name="condition"></param>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        public static IEnumerable<TSource> 
+        public static IEnumerable<TSource>
             WhereIf<TSource>
             (this IEnumerable<TSource> source,
             bool condition,
@@ -37,15 +37,30 @@ namespace Utils.Extensions
         /// <param name="condition"></param>
         /// <param name="path"></param>
         /// <returns></returns>
-        public static IQueryable<T> 
+        public static IQueryable<T>
             IncludeIf<T, TProperty>
-            (this IQueryable<T> source, 
-            bool condition, 
+            (this IQueryable<T> source,
+            bool condition,
             Expression<Func<T, TProperty>> path)
             where T : class
         {
             return condition
                 ? source.Include(path)
+                : source;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TEntity"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="condition"></param>
+        /// <returns></returns>
+        public static IQueryable<TEntity> AsNoTrackingIf<TEntity>(this IQueryable<TEntity> source, bool condition)
+            where TEntity : class
+        {
+            return condition 
+                ? source.AsNoTracking()
                 : source;
         }
     }
