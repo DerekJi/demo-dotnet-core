@@ -1,11 +1,11 @@
 ﻿using ConsoleDemo.Entities;
 using Database;
-using Database.DTO;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Utils.Extensions;
 
 namespace ConsoleDemo.Enumerable
 {
@@ -18,5 +18,11 @@ namespace ConsoleDemo.Enumerable
             db = context;
         }
 
+
+        public IQueryable<Products> FindAll()
+        {
+            var products = db.Products;
+            return products;
+        }
     }
 }

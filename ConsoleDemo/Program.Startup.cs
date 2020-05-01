@@ -11,7 +11,7 @@ namespace ConsoleDemo
     {
         private static readonly string connectionString = "Server=(localdb)\\mssqllocaldb;Database=Northwind;Trusted_Connection=True;";
         private static readonly LoggerFactory LocalLoggerFactory = new LoggerFactory(new[] { new DebugLoggerProvider() });
-        private static IProductService simpleService;
+        private static IProductService productService;
 
         static void Main(string[] args)
         {
@@ -30,7 +30,7 @@ namespace ConsoleDemo
                 .AddTransient<IProductService, ProductService>()
                 .BuildServiceProvider();
 
-            simpleService = serviceProvider.GetService<IProductService>();
+            productService = serviceProvider.GetService<IProductService>();
         }
     }
 }
