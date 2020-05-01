@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDemo", "ConsoleDemo\ConsoleDemo.csproj", "{9D5E7D40-B5A9-4FE1-8A2E-71DA150BDD4D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{35E42A80-3C85-4C7D-8D37-09535A7EDAF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{1C77AFDA-547A-44E2-BAD5-6A9E91291D75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{1C77AFDA-547A-44E2-BAD5-6A9E91291D75}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CHANGELOG", "CHANGELOG", "{058B0E68-5ADC-411C-A933-19416DCC63AF}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,10 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D5E7D40-B5A9-4FE1-8A2E-71DA150BDD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D5E7D40-B5A9-4FE1-8A2E-71DA150BDD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D5E7D40-B5A9-4FE1-8A2E-71DA150BDD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D5E7D40-B5A9-4FE1-8A2E-71DA150BDD4D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35E42A80-3C85-4C7D-8D37-09535A7EDAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35E42A80-3C85-4C7D-8D37-09535A7EDAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35E42A80-3C85-4C7D-8D37-09535A7EDAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
