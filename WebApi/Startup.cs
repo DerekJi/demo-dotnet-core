@@ -14,7 +14,7 @@ using Microsoft.OpenApi.Models;
 
 namespace WebApi
 {
-    public class Startup
+    public partial class Startup
     {
         private static string apiVersion = "v1";
         private static string apiTitle = $"Demo Web API";
