@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Database.Entities;
+using System;
 using System.Collections.Generic;
 
-namespace ConsoleDemo.Entities
+namespace Database.Entities
 {
-    public partial class OrderDetails
+    public partial class OrderDetails : IEntity
     {
         public int OrderId { get; set; }
         public int ProductId { get; set; }

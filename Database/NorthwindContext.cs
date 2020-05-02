@@ -1,5 +1,5 @@
 ﻿using System;
-using ConsoleDemo.Entities;
+using Database.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Logging;

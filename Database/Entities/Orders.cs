@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Database.Entities;
+using System;
 using System.Collections.Generic;
 
-namespace ConsoleDemo.Entities
+namespace Database.Entities
 {
-    public partial class Orders
+    public partial class Orders : IEntity
     {
         public Orders()
         {
